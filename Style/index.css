@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=DM+Sans:wght@400;500;700&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #fff5da;
+}
+#header {
+	padding: 15px;
+	font-family: 'Acme', sans-serif;
+	background-color: #5d534a;
+	color: white;
+}
+
+#container {
+	padding: 0px 15px;
+}
+
+.container {
+	max-width: 930px;
+	margin: 25px auto;
+	border-radius: 15px;
+	background-color: white;
+	font-family: 'DM Sans', sans-serif;
+	box-shadow: 0px 10px 10px -5px #111;
+}
+
+div.heading {
+	padding: 20px 20px 10px;
+	background-color: #5d534a;
+	color: white;
+	border-radius: 10px 10px 0 0;
+	font-family: 'Acme', sans-serif;
+}
+.content {
+	padding: 15px 20px 1px;
+	background-color: white;
+	border-radius: 0 0 10px 10px;
+}
+
+label {
+	font-size: 14px;
+	display: block;
+	margin-bottom: 3px;
+}
+input {
+	width: 100%;
+	padding: 12px 10px;
+	border: 2.5px solid #5d534a;
+	border-radius: 5px;
+	background-color: #fff5da;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 18px;
+}
+
+div.input {
+	margin-bottom: 15px;
+}
+
+.clear {
+	clear: both;
+}
+.submit {
+	margin-bottom: 20px;
+}
+button {
+	background-color: #5d534a;
+	color: white;
+	border: 0;
+	border-radius: 10px;
+	box-shadow: 0px 10px 5px -6px #222;
+	font-weight: 600;
+	float: right;
+	padding: 12px;
+	font-size: 18px;
+	font-family: 'DM Sans', sans-serif;
+}
+button:hover {
+	cursor: pointer;
+}
+button:active {
+	transform: translateY(5px);
+	box-shadow: none;
+}
+.card {
+	padding: 15px;
+	border: 2px solid #5d534a;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+.progresscard {
+	display: grid;
+	grid-template-columns: auto 30px;
+	grid-template-areas:
+		'todo button'
+		'date button';
+}
+.todo {
+	grid-area: todo;
+	font-weight: bold;
+	font-size: 20px;
+}
+.tanggal {
+	grid-area: date;
+	font-size: 15px;
+}
+.check {
+	grid-area: button;
+}
+.icon i {
+	display: block;
+	background-color: #5d534a;
+	color: #fff5da;
+	padding: 10px;
+	font-size: 18px;
+	border-radius: 5px;
+	box-shadow: 0px 5px 5px -2px #111;
+}
+.icon i:hover {
+	cursor: pointer;
+}
+.icon i:active {
+	padding: 10px;
+	font-size: 16px;
+	transform: translateY(5px);
+	box-shadow: none;
+}
+.icon {
+	display: flex;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+}
+.donecard {
+	display: grid;
+	grid-template-columns: auto 60px 30px;
+	grid-template-areas:
+		'todo undo trash'
+		'date undo trash';
+}
+.undo {
+	grid-area: undo;
+}
+.trash {
+	grid-area: trash;
+}
+p {
+	margin-bottom: 20px;
+}
